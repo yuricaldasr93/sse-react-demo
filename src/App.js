@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+//Componentes diretos
+
+//Pacote Router DOM
+
+//Styled components
+import { Template } from './components/template/style.js';
+import Boxacoes from './components/boxacoes';
+import Boxmensagens from './components/boxmensagens';
+
+//Pages
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Template>
+      <Boxacoes boxTitle="Ações"/>
+      <Boxmensagens boxTitle="Mensagens"/>
+    </Template>
   );
 }
 
